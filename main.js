@@ -14,10 +14,9 @@ client.on('ready', () => {
 })
 
 client.on('messageCreate', message => {
-    if (message.content.endsWith('quoi')) {
+    if (message.content.match(/q+u+o+i+\b/gi)) {
         message.reply('-feur')
     }
-
     if (message.content.endsWith('non')) {
         message.reply('-bril')
     }
