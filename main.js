@@ -17,6 +17,13 @@ client.on('messageCreate', message => {
     if (message.content.endsWith('quoi')) {
         message.reply('-feur')
     }
+
+    if (message.content.endsWith('non')) {
+        message.reply('-bril')
+    }
+    if (message.content.endsWith('oui')) {
+        message.reply('-fi')
+    }
 })
 
 client.login(TOKEN);
