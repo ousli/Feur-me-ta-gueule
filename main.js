@@ -14,7 +14,7 @@ client.on('ready', () => {
 })
 
 client.on('messageCreate', message => {
-    if (message.content.match(/q+u+o+i+\b/gi)) {
+    if (message.content.match(/q+u+o+i+$/gim)) {
         message.reply('-feur')
     }
     if (message.content.endsWith('non')) {
